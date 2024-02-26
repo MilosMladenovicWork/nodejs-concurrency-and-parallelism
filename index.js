@@ -28,3 +28,5 @@ const child = fork("./index2.js");
 child.on("exit", () => {
   console.log("child exited");
 });
+
+child.send("Sending message from parent to child");
