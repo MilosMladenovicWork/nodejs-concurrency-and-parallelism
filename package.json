@@ -2,7 +2,7 @@
   "name": "nodejs-concurrency-and-parallelism",
   "version": "1.0.0",
   "description": "",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js"
@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism/issues"
   },
-  "homepage": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism#readme",
-  "dependencies": {
-    "chalk-animation": "^2.0.3"
-  }
+  "homepage": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism#readme"
 }
