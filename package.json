@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism/issues"
   },
-  "homepage": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism#readme"
+  "homepage": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism#readme",
+  "dependencies": {
+    "chalk-animation": "^2.0.3"
+  }
 }
