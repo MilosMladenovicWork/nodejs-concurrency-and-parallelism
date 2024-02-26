@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-concurrency-and-parallelism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism/issues"
+  },
+  "homepage": "https://github.com/MilosMladenovicWork/nodejs-concurrency-and-parallelism#readme"
+}
