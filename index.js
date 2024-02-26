@@ -1,4 +1,4 @@
-const { spawn, exec } = require("child_process");
+const { spawn, exec, fork } = require("child_process");
 
 const ls = spawn("ls");
 
@@ -21,4 +21,10 @@ exec("./command.sh", (error, stdout, stderr) => {
   }
   console.log(`stdout: ${stdout}`);
   console.error(`stderr: ${stderr}`);
+});
+
+const child = fork("./index2.js");
+
+child.on("exit", () => {
+  console.log("child exited");
 });
