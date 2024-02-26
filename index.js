@@ -1,4 +1,5 @@
-const { spawn, exec, fork } = require("child_process");
+import chalkAnimation from "chalk-animation";
+import { exec, fork, spawn } from "child_process";
 
 const ls = spawn("ls");
 
@@ -30,3 +31,5 @@ child.on("exit", () => {
 });
 
 child.send("Sending message from parent to child");
+
+child.on("message", (m) => chalkAnimation.rainbow(`Parent got message: ${m}`));
