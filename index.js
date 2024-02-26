@@ -1,4 +1,4 @@
-const { spawn } = require("child_process");
+const { spawn, exec } = require("child_process");
 
 const ls = spawn("ls");
 
@@ -12,4 +12,13 @@ ls.stderr.on("data", (data) => {
 
 ls.on("close", (code) => {
   console.log(`child process exited with code ${code}`);
+});
+
+exec("./command.sh", (error, stdout, stderr) => {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.error(`stderr: ${stderr}`);
 });
